@@ -1,4 +1,5 @@
-from distutils.log import debug
+import logging
+logging.basicConfig(level=logging.DEBUG)
 from flask import Flask, request, jsonify, make_response
 from flask_migrate import Migrate
 from models  import Customer, db

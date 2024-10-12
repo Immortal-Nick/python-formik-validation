@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import logging
+logging.getLogger("faker.factory").setLevel(logging.ERROR)
 import email
 from random import choice as rc, randint
 
